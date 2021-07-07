@@ -9,6 +9,12 @@
     font-family: 'Solway', serif;
     scroll-behavior: smooth;
     background-image: url(images/background.jpg);
+    /* background: #3a3040; */
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -21,13 +27,13 @@ h1 {
 
 
 nav {
-    /* position: fixed; */
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0px 100px;
-    background: #3a3040;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    /* background: #3a3040; */
+    /* box-shadow: 0 3px 10px rgba(0,0,0,0.1); */
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -35,27 +41,31 @@ nav {
     transition: 1s;
 }
 nav.sticky {
-    background: rgba(255, 238, 255, 0.95);
+    top: -2px;
+    background: #3a3040bb;
     padding: 0px 100px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     transition: 0.5s;
 }
 
 nav ul {
     display: flex;
+    background: #3a304000;
     justify-content: flex-end;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0;
 }
 nav ul li {
     list-style: none;
+    background: none;
     position: relative;
     transition: 0.5s;
     box-sizing: border-box;
 }
 nav ul li a {
     color: #ded0de;
+    background: #3a304000;
     font-size: 14px;
     font-weight: 500;
     position: relative;
@@ -66,21 +76,21 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    /* color: #ff0070; */
+    color: #ff3414;
     letter-spacing: 1.5px;
     font-weight: 700;
-    /* border-bottom: #ff006fa1 6px solid; */
-    transition: 0.3s;
+    transition: 0.5s;
 }
 nav.sticky ul li a {
-    color: #450070;
-    padding: 16px 22px;
+    background: #3a304000;
+    color: #ded0de;
+    padding: 16px 8px;
+    margin: 0px 30px;
     transition: 0.5s;
 }
 nav.sticky ul li a:hover {
     color: #ff3414;
     font-weight: 700;
-    border-bottom: #ff331480 5px solid;
     transition: 0.3s;
 }
 
@@ -88,25 +98,108 @@ nav a.active {
     color: #e5e5e5;
     font-weight: 700;
     border-bottom: #e5e5e5ee 4px solid;
-    /* background-color: #400068; */
-}
-nav.sticky a.active {
-    color: #ff3414;
-    font-weight: 700;
-    border-bottom: #ff3414 5px solid;
 }
 
 
 
-.copyright {
-    position: fixed;
-    height: 6vh;
-    background-color: #3a3040;
-    color: #fef;
-    text-align: left;
-    padding: 12px 12px 12px 24px;
+
+.image-gallery {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+p {
+    color: #e5e5e5;
     font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.footer {
+    /* position: fixed; */
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    background-color: #3a3040;
+    color: #e5e5e5;
+    padding: 14px 24px;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 500;
     letter-spacing: 1px;
-    top: 94vh;
+    margin-left: 20px;
+}
+
+.social-links {
+    color: #e5e5e5;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 40px;
+}
+.social-links li {
+    display: inline;
+    list-style: none;
+}
+.social-links li a {
+    margin: 10px;
+}
+.social-links i {
+    color: #e5e5e5;
+    width: 14px;
+    font-size: 18px;
+}
+.social-links i:hover {
+    color: #fe3414;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.container {
+    width: 80%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-left {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.container-left img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.container-right {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

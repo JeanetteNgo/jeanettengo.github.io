@@ -45,9 +45,11 @@ nav.sticky {
     top: -2px;
     max-width: 100%;
     background: #3a3040bb;
+    background-image: url(./images/background.jpg);
     padding: 0px 100px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     transition: 1s;
+    opacity: 0.9;
 }
 
 nav ul {
@@ -102,12 +104,12 @@ nav a.active {
     border-bottom: #e5e5e5ee 4px solid;
 }
 
-img {
+/* img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 p {
     color: #e5e5e5;
@@ -233,7 +235,7 @@ p {
     height: 100px;
     background-color: #3a3040;
     color: #e5e5e5;
-    border-top: #3a3040 3px solid;
+    border-top: #3a3040 2px solid;
     padding: 14px 24px;
     width: 100%;
 
@@ -331,7 +333,39 @@ p {
 }
 
 
-
+.graphics-container {
+    position: relative;
+    column-count: 3;
+    padding: 20px;
+    margin: 40px 16%;
+}
+.graphics {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.graphics h2 {
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
+    background: #3a3040aa;
+    color: #e5e5e5;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+.graphics:hover h2 {
+    opacity: 0.8;
+}
+.graphics img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.graphics:hover img {
+    transform: scale(1.1);
+}
 
 
 
@@ -356,9 +390,11 @@ p {
         top: -2px;
         max-width: 100%;
         background: #3a3040bb;
+        background-image: url(./images/background.jpg);
         padding: 0px 10px;
-        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 3px 15px rgba(0,0,0,0.2);
         transition: 0.5s;
+        opacity: 0.9;
     }
     
     nav ul {
@@ -398,9 +434,7 @@ p {
         margin-top: 40px;
         bottom: 0;
         height: 140px;
-        color: #e5e5e5;
         padding: 14px 24px;
-        width: 100%;
     
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -409,17 +443,24 @@ p {
     .footer p {
         margin: 0;
         font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 1px;
         text-align: center;
     }
     
     .social-links {
         margin: 0;
-        color: #e5e5e5;
-        letter-spacing: 1.2px;
-        font-weight: 500;
         text-align: center;
+    }
+
+    .graphics-container {
+        position: relative;
+        column-count: 1;
+        padding: 20px;
+        margin: 40px 20px;
+    }
+    .graphics h2 {
+        font-size: 14px;
+    }
+
     }
 
 }

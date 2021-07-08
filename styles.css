@@ -167,7 +167,7 @@ p {
     transition: transform 400ms;
 }
 .projects-container .box:hover .img-box img {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: transform 600ms;
 }
 
@@ -188,6 +188,11 @@ p {
 
 .projects-container .box:hover .img-details-box {
     transform: scaleY(1);
+}
+
+.projects-container .box .img-details-box a {
+    text-decoration: none;
+    background: #3a304000;
 }
 .projects-container .box .img-details-box .img-details {
     /* position: relative; */

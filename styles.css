@@ -31,6 +31,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100%;
     padding: 0px 100px;
     /* background: #3a3040; */
     /* box-shadow: 0 3px 10px rgba(0,0,0,0.1); */
@@ -42,6 +43,7 @@ nav {
 }
 nav.sticky {
     top: -2px;
+    max-width: 100%;
     background: #3a3040bb;
     padding: 0px 100px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
@@ -301,3 +303,125 @@ p {
     align-items: center;
 }
 
+.about-me-text {
+    margin: 60px;
+    text-align: center;
+}
+
+.about-me-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ded0dedd;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.about-me-text p {
+    font-family: 'Solway', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ded0de;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.about-me-text span {
+    font-size: 18px;
+    text-transform: initial;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 10px;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 1s;
+    }
+    nav.sticky {
+        top: -2px;
+        max-width: 100%;
+        background: #3a3040bb;
+        padding: 0px 10px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        transition: 0.5s;
+    }
+    
+    nav ul {
+        display: flex;
+        background: #3a304000;
+        justify-content: flex-end;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    nav ul li {
+        list-style: none;
+        background: none;
+        position: relative;
+        transition: 0.5s;
+        box-sizing: border-box;
+    }
+    nav ul li a {
+        color: #ded0de;
+        background: #3a304000;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        display: inline-block;
+        padding: 16px 4px;
+        margin: 0px 12px;
+    }
+    nav.sticky ul li a {
+        background: #3a304000;
+        color: #ded0de;
+        padding: 14px 4px;
+        margin: 0px 12px;
+        transition: 0.5s;
+    }
+
+    .footer {
+        margin-top: 40px;
+        bottom: 0;
+        height: 140px;
+        background-color: #3a3040;
+        color: #e5e5e5;
+        border-top: #3a3040 5px solid;
+        padding: 14px 24px;
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .footer p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    .social-links {
+        margin: 0;
+        color: #e5e5e5;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+}

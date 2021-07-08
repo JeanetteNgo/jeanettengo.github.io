@@ -357,7 +357,7 @@ p {
     transition: 0.5s ease-in-out;
 }
 .graphics:hover h2 {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .graphics a {
     position: absolute;
@@ -445,15 +445,35 @@ p {
         transition: 0.5s;
     }
 
+    .projects-container {
+        margin-top: 30px;
+    }
     .projects-container .box {
         width: 300px;
         max-width: 80%;
         max-height: 230px;
         margin: 10px;
     }
+    .projects-container .box:hover {
+        transform: scale(1);
+    }
     .projects-container .box .img-box img {
         width: 100%;
         height: auto;
+    }
+    .projects-container .box .img-details-box .img-details {
+        margin: 12px;
+        padding: 10px;
+    }
+    .projects-container .box .img-details-box .img-details h2 {
+        margin: 8px 0 6px 0;
+        padding: 0;
+        font-size: 24px;
+    }
+    .projects-container .box .img-details-box .img-details p {
+        margin: 5px 0 0;
+        padding: 0;
+        font-size: 18px;
     }
 
     .footer {

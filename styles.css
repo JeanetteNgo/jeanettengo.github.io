@@ -47,7 +47,7 @@ nav.sticky {
     background: #3a3040bb;
     padding: 0px 100px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 nav ul {
@@ -233,7 +233,7 @@ p {
     height: 100px;
     background-color: #3a3040;
     color: #e5e5e5;
-    border-top: #3a3040 5px solid;
+    border-top: #3a3040 3px solid;
     padding: 14px 24px;
     width: 100%;
 
@@ -398,9 +398,7 @@ p {
         margin-top: 40px;
         bottom: 0;
         height: 140px;
-        background-color: #3a3040;
         color: #e5e5e5;
-        border-top: #3a3040 5px solid;
         padding: 14px 24px;
         width: 100%;
     

@@ -229,6 +229,7 @@ p {
     bottom: 0;
     height: 100px;
     background-color: #3a3040;
+    background-image: url(./images/background.jpg);
     color: #e5e5e5;
     border-top: #3a3040 2px solid;
     padding: 14px 24px;
@@ -366,7 +367,7 @@ p {
 
 .item-description {
     width: 90%;
-    margin: 20px 0px;
+    margin: 20px;
 }
 .item-description h3 {
     color: #e5e5e5;
@@ -385,6 +386,7 @@ p {
     line-height: 24px;
     border-radius: 6px;
     margin: 10px 0;
+    text-align: justify;
 }
 .item-description a {
     font-family: 'Poppins', sans-serif;
@@ -559,6 +561,7 @@ p {
     .item-description {
         width: 100%;
         padding: 0px 10px;
+        margin: 20px 0px;
     }
     .item-description p {
         font-size: 14px;

@@ -398,7 +398,7 @@ p {
     transition: 0.5s;
 }
 .item-description a:hover {
-    color: #fe3414;
+    color: #e5e5e5;
     font-weight: 600;
     transition: 0.5s;
 }
@@ -412,8 +412,8 @@ p {
 }
 .software {
     font-family: 'Poppins', sans-serif;
-    background: #fe3414;
-    color: #fef;
+    background: #ee2000;
+    color: #fff;
     font-size: 13px;
     margin: 4px;
     padding: 3px 6px;

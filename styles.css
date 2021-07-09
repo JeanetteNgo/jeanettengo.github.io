@@ -415,9 +415,10 @@ p {
     background: #fe3414;
     color: #fef;
     font-size: 13px;
-    margin: 0px 2px;
+    margin: 4px;
     padding: 3px 6px;
     border-radius: 6px;
+    line-height: 30px;
 }
 
 .item-images img {
@@ -565,6 +566,7 @@ p {
     }
     .item-description p {
         font-size: 14px;
+        text-align: left;
     }
     .item-images img {
         max-width: 100%;

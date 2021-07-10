@@ -370,6 +370,7 @@ p {
 
 .item-container {
     width: 100%;
+    max-width: 1200px;
     margin: 40px 10px;
     padding: 20px 40px;
     border: 1px solid #ded0de60;
@@ -380,7 +381,7 @@ p {
 
 .item-container table {
     margin: 60px 80px 40px 80px;
-    color: #e5e5e5;
+    color: #eeeeee;
     max-width: 60%;
     display: table;
 }
@@ -393,7 +394,7 @@ p {
 }
 .item-container td {
     font-family: 'Poppins', sans-serif;
-    color: #e5e5e5dd;
+    color: #e5e5e5;
     font-size: 14px;
     text-align: left;
     padding: 6px;
@@ -410,21 +411,34 @@ p {
     color: #e5e5e5;
     font-size: 22px;
     font-weight: 600;
-    line-height: 24px;
-    margin: 16px 0px;
-    margin-top: 22px;
+    margin: 8px 0px;
+    margin-top: 30px;
     border-radius: 6px;
     text-transform: uppercase;
 }
 .item-description p {
     font-family: 'Poppins', sans-serif;
-    color: #ded0de;
+    color: #e5e5e5;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     border-radius: 6px;
     margin: 10px 0;
 }
+.item-description ul {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e5e5;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.item-description li {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e5e5;
+    font-size: 14px;
+    margin-left: 18px;
+}
+
 .item-description a {
     font-family: 'Poppins', sans-serif;
     color: #ded0de;
@@ -439,6 +453,7 @@ p {
     font-weight: 600;
     transition: 0.5s;
 }
+
 .date {
     color: #e5e5e5;
     font-size: 18px;
@@ -480,6 +495,53 @@ p {
     height: auto;
     display: block;
     margin: 10px auto;
+}
+
+.case-study-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px 10px;
+    padding: 40px 120px;
+    border: 1px solid #ded0de60;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+.case-study-description {
+    width: 95%;
+    margin: 20px;
+    padding: 10px 60px;
+}
+.case-study-description h3 {
+    color: #eeeeee;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0px;
+    margin-top: 30px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.case-study-description p {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e5e5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+.case-study-description ul {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e5e5;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.case-study-description li {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e5e5;
+    font-size: 14px;
+    margin-left: 18px;
 }
 
 

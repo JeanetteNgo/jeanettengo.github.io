@@ -34,6 +34,19 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.sub-title {
+    color: #ded0dedd;
+    text-align: center;
+}
+.sub-title a {
+    color: #ded0dedd;
+    transition: 0.5s;
+}
+.sub-title a:hover {
+    color: #fe3414;
+    letter-spacing: 1.2px;
+    transition: 0.5s;
+}
 
 nav {
     position: sticky;

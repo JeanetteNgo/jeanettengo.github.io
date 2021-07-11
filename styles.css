@@ -490,6 +490,9 @@ p {
     display: block;
     margin: 10px auto;
 }
+.item-images-wide img {
+    max-width: 800px;
+}
 .item-images video {
     max-width: 600px;
     height: auto;
@@ -550,7 +553,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
     .item-container table {
-        margin: 40px 16px;
+        margin: 40px 16px 20px 16px;
     }
     
     .item-description {

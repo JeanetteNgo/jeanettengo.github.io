@@ -716,16 +716,12 @@ p {
 
 /* Responsive Tablet */
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
 
     .case-study-container {
         width: 100%;
         max-width: 700px;
         margin: 40px 10px;
-        padding: 40px;
+        padding: 40px 20px;
     }
     .case-study-description {
         width: 100%;

@@ -545,6 +545,46 @@ p {
 }
 
 
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .item-container table {
+        margin: 40px 16px;
+    }
+    
+    .item-description {
+        width: 100%;
+        padding: 0px 10px;
+        margin: 20px 0px;
+    }
+    .item-description p {
+        font-size: 14px;
+        text-align: left;
+    }
+    .item-images img {
+        max-width: 100%;
+        padding: 6px;
+    }
+    .item-images video {
+        max-width: 100%;
+        padding: 6px;
+    }
+
+    .case-study-container {
+        width: 100%;
+        max-width: 700px;
+        margin: 40px 10px;
+        padding: 40px;
+    }
+    .case-study-description {
+        width: 100%;
+        padding: 16px;
+    }
+
+}
+
+
 /* Responsive Mobile */
 @media (max-width: 768px) {
     nav {
@@ -714,18 +754,3 @@ p {
 
 }
 
-/* Responsive Tablet */
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-
-    .case-study-container {
-        width: 100%;
-        max-width: 700px;
-        margin: 40px 10px;
-        padding: 40px 20px;
-    }
-    .case-study-description {
-        width: 100%;
-        padding: 10px;
-    }
-
-}

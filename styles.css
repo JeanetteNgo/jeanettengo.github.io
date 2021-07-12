@@ -554,7 +554,9 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .graphics-container {
+        position: relative;
         column-count: 2;
+        padding: 20px;
         margin: 40px 20px;
     }
     .graphics h2 {

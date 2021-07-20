@@ -27,7 +27,6 @@ h1 {
 .title {
     text-align: center;
     margin: 40px 20px;
-    padding-bottom: 6px;
     font-size: 30px;
     font-weight: 600;
     color: #e5e5e5bb;
@@ -315,12 +314,18 @@ p {
 }
 
 .container {
-    margin: 60px 10%;
-    width: 80%;
+    padding: 40px 120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .graphics-container {
     position: relative;
+    max-width: 1200px;
     column-count: 3;
     padding: 20px;
     margin: 40px 80px;
@@ -715,12 +720,13 @@ p {
 
     .container {
         width: 90%;
-        margin: 4px;
+        padding: 4px;
     }
+
     .graphics-container {
         position: relative;
         column-count: 1;
-        padding: 20px;
+        padding: 10px;
         margin: 40px 10px;
     }
     .graphics h2 {

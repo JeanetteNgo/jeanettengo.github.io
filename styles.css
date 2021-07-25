@@ -298,32 +298,6 @@ p {
     transition: 0.5s;
 }
 
-.about-me-text {
-    margin: 60px;
-    text-align: center;
-}
-
-.about-me-text h2 {
-    font-size: 30px;
-    font-weight: 500;
-    color: #ded0dedd;
-    text-transform: uppercase;
-    margin: 40px;
-}
-
-.about-me-text p {
-    font-family: 'Solway', serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #ded0de;
-    text-transform: uppercase;
-    line-height: 30px;
-}
-
-.about-me-text span {
-    font-size: 18px;
-    text-transform: initial;
-}
 
 .container {
     padding: 40px 120px;
@@ -592,6 +566,60 @@ p {
 }
 
 
+/* About */
+
+.item-container h1 {
+    font-family: 'Solway', serif;
+    text-align: center;
+    margin: 60px 20px 30px 20px;
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+.about-img {
+    display: block;
+    margin: 60px auto;
+    width: 280px;
+    border-radius: 50%;
+    border: 3px solid #e5e5e5;
+}
+.about-me-text {
+    display: flex;
+    justify-content: center;
+}
+.about-me-ul {
+    color: #ded0de;
+    margin-bottom: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+.about-me-ul li {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(12.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-6.0deg) }
+     30% { transform: rotate(12.0deg) }
+     40% { transform: rotate(-2.0deg) }
+     50% { transform: rotate(8.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
 
 /* Responsive Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -816,6 +844,23 @@ p {
     .case-study-description img {
         max-width: 100%;
         margin: 10px auto 5px;
+    }
+
+    .about-img {
+        margin: 30px auto;
+        width: 220px;
+    }
+    .about-me-ul {
+        margin: 12px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .about-me-ul li {
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: initial;
     }
 
 }

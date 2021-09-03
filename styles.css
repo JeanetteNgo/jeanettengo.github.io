@@ -58,6 +58,13 @@ h4 {
     text-align: center;
 }
 
+p {
+    color: #e5e5e5;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
 
 nav {
     position: sticky;
@@ -86,6 +93,7 @@ nav.sticky {
 }
 
 nav ul {
+    font-family: 'Solway', serif;
     display: flex;
     justify-content: flex-end;
     max-width: 1000px;
@@ -132,13 +140,6 @@ nav a.active {
     color: #e5e5e5;
     font-weight: 700;
     border-bottom: #e5e5e5ee 4px solid;
-}
-
-p {
-    color: #e5e5e5;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
 }
 
 
@@ -424,7 +425,7 @@ p {
 
 .date {
     color: #e5e5e5;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     margin: 8px 0px;
@@ -641,6 +642,14 @@ p {
     color: #3a3040;
     text-transform: uppercase;
 }
+.about-container p {
+    font-family: 'Poppins', sans-serif;
+    color: #3a3040;
+}
+.about-container ul {
+    font-family: 'Poppins', sans-serif;
+    color: #3a3040;
+}
 .about-img {
     display: block;
     margin: 60px auto;
@@ -712,6 +721,226 @@ p {
     text-transform: initial;
 }
 
+.about-title {
+    font-size: 46px;
+    font-weight: 700;
+    color: #3a3040;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.skills-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 60px 20px;
+    /* background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 10px; */
+}
+.skills-top p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px;
+    padding: 4px 10px;
+    line-height: 2.5rem;
+}
+
+.skills-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    width: 460px;
+    min-height: 500px;
+    /* flex-basis: 80%; */
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px 20px auto;
+}
+.icon i {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background: -webkit-linear-gradient(45deg, #dd9090, #fe3414);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skills-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    color: #3a3040;
+}
+.skills-item h4  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #3a3040;
+    text-align: left;
+}
+.skills-item hr {
+    color: #3a3040;
+    width: 40px;
+    border: 2px solid #dd9090;
+    margin: 14px auto;
+}
+.skills-item p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.6rem;
+}
+
+/* Experience */
+.experience-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    flex-direction: column;
+}
+.experience-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /* border-bottom: 1px solid #3a3040; */
+    /* background: rgba(255, 255, 255, 0.4); */
+}
+.experience-info {
+    padding: 30px;
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(45deg, #fe3414 0%, #ded0de 100%); */
+    color: #3a3040;
+}
+.experience-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin: 6px 0px;
+    font-weight: 600;
+}
+.experience-info h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #fe3414;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 6px 0px;
+    text-transform: initial;
+}
+.experience-info li {
+    margin-left: 20px;
+    font-size: 15px;
+}
+.experience-img {
+    flex-basis: 50%;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+.experience-img img {
+    width: 400px;
+}
+
+
+
+/* Education */
+.education-container {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 60px 20px;
+}
+.education-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+.education-info {
+    margin-top: 20px;
+    padding: 40px;
+}
+.education-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin: 6px 0px;
+    font-weight: 600;
+}
+.education-info h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #353535;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 6px 0px 24px 0px;
+    text-align: left;
+    text-transform: initial;
+}
+.education-info ul {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fe3414;
+}
+.education-info li {
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #3a3040;
+}
+.education-img {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education-img img {
+    width: 400px;
+}
+
+
 .wave {
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -733,7 +962,7 @@ p {
 
 
 /* Responsive Tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
 
     .graphics-container {
         position: relative;
@@ -782,6 +1011,115 @@ p {
         width: 100%;
         padding: 16px;
     }
+
+    .skills-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 40px 0px;
+    }
+    .skills-bottom {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .skills-item {
+        width: 350px;
+        min-height: 500px;
+        padding: 26px;
+        border-radius: 0px;
+        background-color: white;
+        margin: 30px 0px;
+        border-right: 1px solid #e5e5e5;
+    }
+    .skills-item p {
+        font-size: 14px;
+    }
+
+    .experience-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 0px;
+    }
+    .experience-item {
+        flex-direction: row;
+        width: 100%;
+        margin: 14px auto;
+    }
+    .experience-info {
+        flex-basis: 50%;
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+    }
+    .experience-info h3 {
+        font-size: 20px;
+        margin: 6px 0px;
+        font-weight: 600;
+    }
+    .experience-info h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 6px 0px;
+    }
+    .experience-info li {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .experience-img {
+        max-width: 300px;
+        padding: 0px;
+    }
+    .experience-img img {
+        width: 300px;
+    }
+
+    .education-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 40px 0px 20px;
+    }
+    .education-item {
+        width: 100%;
+        margin: 20px auto;
+        padding: 0px;
+    }
+    .education-info {
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .education-info h3 {
+        font-size: 22px;
+        margin: 12px 0px 0px;
+        font-weight: 600;
+    }
+    .education-info h4 {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px 0px 16px;
+    }
+    .education-info ul {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .education-info li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .education-img {
+        margin: 10px;
+        max-width: 260px;
+        padding: 0px;
+    }
+    .education-img img {
+        width: 260px;
+    }
+    
 
 }
 
@@ -1000,5 +1338,119 @@ p {
         text-transform: initial;
     }
 
+    .about-title {
+        font-size: 36px;
+    }
+
+    .skills-container {
+        margin: 0px auto;
+        padding: 40px 0px;
+    }
+    .skills-top p {
+        font-size: 14px;
+        margin: 0px;
+        padding: 4px 16px;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    .skills-item {
+        padding: 40px 26px;
+        margin: 30px 0px auto;
+    }
+    .skills-item p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+
+
+    .experience-container {
+        margin: 40px auto;
+        padding: 0px;
+    }
+    .experience-item {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .experience-info h3 {
+        font-size: 18px;
+        margin: 0px;
+        font-weight: 700;
+    }
+    .experience-info h4 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 6px 0px;
+    }
+    .experience-info ul {
+        font-size: 15px;
+    }
+    .experience-info li {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .experience-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .experience-img img {
+        width: 300px;
+    }
+
+    .education-container {
+        margin: 40px auto;
+        padding: 0px;
+    }
+    .education-item {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 20px 40px;
+        margin: 20px auto;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+    .education-info {
+        margin-top: 0px;
+        padding: 10px;
+    }
+    .education-info h3 {
+        font-size: 18px;
+        margin: 0px;
+        font-weight: 600;
+    }
+    .education-info h4 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .education-info ul {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .education-info li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .education-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+    .education-img img {
+        width: 300px;
+    }
 }
 

@@ -977,6 +977,16 @@ nav a.active {
         font-size: 10px;
     }
     
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .item-container {
+        width: 100%;
+        margin: 24px 20px;
+        padding: 12px 40px;
+    }
     .item-description {
         width: 100%;
         padding: 0px 10px;
@@ -998,7 +1008,7 @@ nav a.active {
     .case-study-container {
         width: 100%;
         margin: 20px 10px;
-        padding: 20px;
+        padding: 30px;
     }
     .case-study-container table {
         margin: 40px 16px 20px 16px;

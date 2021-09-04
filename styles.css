@@ -468,8 +468,8 @@ nav a.active {
     margin: 10px auto;
 }
 .item-images-wide img {
-    max-width: 800px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 860px;
 }
 .item-images video {
     max-width: 600px;
@@ -650,13 +650,8 @@ nav a.active {
     font-family: 'Poppins', sans-serif;
     color: #3a3040;
 }
-.about-img {
-    display: block;
-    margin: 60px auto;
-    width: 280px;
-    border-radius: 50%;
-    border: 4px solid #dd9090;
-}
+
+
 .about-me-text {
     display: flex;
     justify-content: center;
@@ -664,16 +659,29 @@ nav a.active {
     margin: 30px auto;
 }
 .connect-box {
-    /* background: rgba(255, 255, 255, 0.6); */
-    background-image: url(./images/ice-cream-penguin-2.png);
+    background: rgba(255, 255, 255, 0.8);
+    /* background-image: url(./images/ice-cream-penguin-2.png); */
     background-size: cover;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
-    border: 1px solid #ded0de;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ded0debb;
     border-radius: 5px;
-    padding: 20px 80px;
-    margin-bottom: 20px;
-    height: 560px;
-    width: 440px;
+    padding: 20px;
+    margin: 20px auto;
+    height: 540px;
+    width: 420px;
+}
+.about-img {
+    display: block;
+    margin: 40px auto;
+    width: 220px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid #dd9090;
+}
+.connect-links {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 6px;
 }
 .connect-box p {
     font-family: 'Poppins', sans-serif;
@@ -696,6 +704,17 @@ nav a.active {
     color: #fe3414;
     font-weight: 600;
     transition: 0.8s;
+}
+.about-links {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 14px 0px;
+    display: flex;
+    border-top: 3px solid #dd9090aa;
+}
+.about-links a {
+    padding: 0 10px;
 }
 .about-me-text h2 {
     margin: 10px;
@@ -736,7 +755,7 @@ nav a.active {
     text-align: center;
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 60px 20px;
     /* background-color: rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid white;
@@ -859,9 +878,13 @@ nav a.active {
     margin: 6px 0px;
     text-transform: initial;
 }
+.experience-info ul {
+    font-weight: 500;
+}
 .experience-info li {
     margin-left: 20px;
     font-size: 15px;
+    font-weight: 400;
 }
 .experience-img {
     flex-basis: 50%;
@@ -939,6 +962,17 @@ nav a.active {
 .education-img img {
     width: 400px;
 }
+.education-info a {
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.8s;
+}
+.education-info a:hover {
+    color: #fe3414;
+    font-weight: 600;
+    transition: 0.8s;
+    letter-spacing: 0.5px;
+}
 
 
 .wave {
@@ -985,7 +1019,7 @@ nav a.active {
     .item-container {
         width: 100%;
         margin: 24px 20px;
-        padding: 12px 40px;
+        padding: 30px 40px;
     }
     .item-description {
         width: 100%;
@@ -1075,6 +1109,9 @@ nav a.active {
         font-size: 16px;
         font-weight: 600;
         margin: 6px 0px;
+    }
+    .experience-info ul {
+        font-size: 15px;
     }
     .experience-info li {
         margin-left: 20px;
@@ -1324,8 +1361,8 @@ nav a.active {
     .connect-box {
         padding: 20px 30px;
         margin-bottom: 20px;
-        height: 450px;
-        background-image: url(./images/ice-cream-penguin-3.png);
+        height: auto;
+        /* background-image: url(./images/ice-cream-penguin-3.png); */
         background-size: contain;
     }
     .connect-box p {

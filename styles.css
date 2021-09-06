@@ -650,14 +650,14 @@ nav a.active {
     font-family: 'Poppins', sans-serif;
     color: #3a3040;
 }
-
-
 .about-me-text {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
 }
+
+
 .connect-box {
     background: rgba(255, 255, 255, 0.8);
     /* background-image: url(./images/ice-cream-penguin-2.png); */
@@ -716,28 +716,70 @@ nav a.active {
 .about-links a {
     padding: 0 10px;
 }
-.about-me-text h2 {
-    margin: 10px;
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 34px;
+    /* background-color: lightpink; */
 }
-.about-me-text p {
+.about-me-container h2 {
     font-family: 'Poppins', sans-serif;
+    margin: 0px auto;
     color: #3a3040;
 }
-.about-me-ul {
-    font-family: 'Poppins', sans-serif;
-    color: #3a3040;
-    margin-bottom: 40px;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 28px;
-}
-.about-me-ul li {
-    font-family: 'Poppins', sans-serif;
-    margin-left: 20px;
-    font-size: 16px;
+.about-me-container .speech-bubble {
+    font-size: 15px;
     font-weight: 400;
-    text-transform: initial;
+    color: #353535;
+    margin: 20px auto 0px;
+    padding: 30px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    position: relative;
+    top: 16px;
+    right: 120px;
+    z-index: 1;
+}
+
+.about-me-table {
+    width: fit-content;
+    margin: 0px auto;
+    padding: 14px;
+    color: #303030;
+    display: flex;
+    border: 2px solid #dd9090bb;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    position: relative;
+    top: -10px;
+    right: -60px;
+    z-index: 2;
+}
+.about-me-table th {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    padding: 4px 20px;
+    width: auto;
+}
+.about-me-table td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding: 4px 20px;
+    width: auto;
 }
 
 .about-title {
@@ -756,7 +798,7 @@ nav a.active {
     width: 100%;
     max-width: 1200px;
     margin: 60px auto;
-    padding: 60px 20px;
+    padding: 100px 20px;
     /* background-color: rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid white;
     border-right: 1px solid white;
@@ -1056,13 +1098,64 @@ nav a.active {
         padding: 16px;
     }
 
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        /* background-color: lightpink; */
+    }
+    .about-me-container .speech-bubble {
+        font-size: 14px;
+        font-weight: 400;
+        color: #353535;
+        margin: 20px auto 0px;
+        padding: 30px;
+        width: 60%;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    
+        position: relative;
+        top: 10px;
+        right: 80px;
+        z-index: 1;
+    }
+    
+    .about-me-table {
+        width: fit-content;
+        margin: 0px auto;
+        padding: 12px;
+        display: flex;
+        border: 2px solid #dd9090bb;
+        border-radius: 5px;
+    
+        position: relative;
+        top: -10px;
+        right: -40px;
+        z-index: 2;
+    }
+    .about-me-table th {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 10px;
+    }
+    .about-me-table td {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 4px 10px;
+    }
+
     .skills-container {
         flex-direction: column;
         text-align: center;
         width: 100%;
         max-width: 1200px;
         margin: 40px auto;
-        padding: 40px 0px;
+        padding: 80px 0px 20px;
     }
     .skills-bottom {
         display: flex;
@@ -1087,7 +1180,7 @@ nav a.active {
         width: 100%;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 40px 0px;
+        padding: 80px 0px 20px;
     }
     .experience-item {
         flex-direction: row;
@@ -1129,7 +1222,7 @@ nav a.active {
         width: 100%;
         max-width: 1000px;
         margin: 20px auto;
-        padding: 40px 0px 20px;
+        padding: 80px 0px 20px;
     }
     .education-item {
         width: 100%;
@@ -1372,17 +1465,45 @@ nav a.active {
     .connect-box a {
         font-size: 13px;
     }
-    .about-me-ul {
-        margin: 12px;
-        margin-bottom: 40px;
-        font-size: 20px;
-        line-height: 26px;
+
+    .about-me-container {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 10px;
     }
-    .about-me-ul li {
-        margin-left: 20px;
-        font-size: 14px;
+    .about-me-container .speech-bubble {
+        font-size: 13px;
         font-weight: 400;
-        text-transform: initial;
+        margin: 20px auto 0px;
+        padding: 26px 20px;
+        width: 80%;
+    
+        position: relative;
+        top: 10px;
+        right: 42px;
+        z-index: 1;
+    }
+    
+    .about-me-table {
+        padding: 10px;
+        border: 1px solid #dd9090bb;
+    
+        position: relative;
+        top: -10px;
+        right: -16px;
+        z-index: 2;
+    }
+    .about-me-table th {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 4px 6px;
+    }
+    .about-me-table td {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 4px 0px;
     }
 
     .about-title {
@@ -1391,7 +1512,7 @@ nav a.active {
 
     .skills-container {
         margin: 0px auto;
-        padding: 40px 0px;
+        padding: 60px 0px 20px;
     }
     .skills-top p {
         font-size: 14px;
@@ -1412,8 +1533,8 @@ nav a.active {
 
 
     .experience-container {
-        margin: 40px auto;
-        padding: 0px;
+        margin: 20px auto;
+        padding: 60px 0px 20px;
     }
     .experience-item {
         flex-direction: column;
@@ -1453,8 +1574,8 @@ nav a.active {
     }
 
     .education-container {
-        margin: 40px auto;
-        padding: 0px;
+        margin: 0px auto;
+        padding: 60px 0px 20px;
     }
     .education-item {
         flex-direction: column;

@@ -478,11 +478,21 @@ nav a.active {
     margin: 10px auto;
 }
 
+.behance-case-study-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 1px solid #ded0de60;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
 .case-study-container {
     width: 100%;
     max-width: 1200px;
     margin: 40px 10px;
-    padding: 40px 100px;
+    padding: 40px 80px;
     border: 1px solid #ded0de60;
     border-radius: 8px;
     background: rgba(255, 255, 255, 1);
@@ -571,6 +581,7 @@ nav a.active {
     line-height: 24px;
     border-radius: 6px;
     margin: 10px 0;
+    text-align: justify;
 }
 .case-study-description a {
     font-family: 'Poppins', sans-serif;
@@ -615,10 +626,11 @@ nav a.active {
 }
 .shopee-figma-prototype {
     width: 100%;
-    margin-top: 20px;
+    margin: 0px auto;
 }
 .responsive-iframe {
-    max-width: 100%;
+    width: 100%;
+    margin: 0px auto;
 }
 
 
@@ -1036,6 +1048,24 @@ nav a.active {
     100% { transform: rotate( 0.0deg) }
   }
 
+
+/* Coursework */
+.coursework-container {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 60px 20px;
+}
+.coursework-container h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto 10px;
+}
+.module-list li {
+    margin-left: 24px;
+    line-height: 30px;
+}
 
 /* Responsive Tablet */
 @media screen and (min-width: 768px) and (max-width: 1080px) {
@@ -1496,6 +1526,7 @@ nav a.active {
         z-index: 2;
     }
     .about-me-table th {
+        display: flex;
         font-size: 13px;
         font-weight: 500;
         padding: 4px 6px;

@@ -449,6 +449,7 @@ nav a.active {
     align-items: center;
     justify-content: center;
 }
+
 .item-images h4 {
     font-family: 'Poppins', sans-serif; 
     font-size: 18px;
@@ -471,11 +472,20 @@ nav a.active {
     width: 100%;
     max-width: 860px;
 }
+
 .item-images video {
     max-width: 600px;
     height: auto;
     display: block;
     margin: 10px auto;
+}
+.item-images-grid {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.item-images-grid img {
+    width: 100%;
 }
 
 .behance-case-study-container {
@@ -632,6 +642,14 @@ nav a.active {
     width: 100%;
     margin: 0px auto;
 }
+
+.hoodie-chat {
+    border: #01998c 4px solid;
+    border-radius: 50%;
+    width: 200px;
+}
+
+  
 
 
 /* About */

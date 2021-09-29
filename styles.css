@@ -1068,21 +1068,59 @@ nav a.active {
 
 
 /* Coursework */
+.coursework-header p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
 .coursework-container {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     text-align: left;
     width: 100%;
     max-width: 1200px;
     margin: 40px auto;
-    padding: 60px 20px;
+    padding: 40px;
 }
 .coursework-container h2 {
     font-family: 'Poppins', sans-serif;
     margin: 20px auto 10px;
+    color: #3a3040;
+}
+.coursework-container h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto 6px;
+    color: #3a3040;
+}
+.coursework-container h4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 26px auto 0px;
+    color: #3a3040;
+    text-align: left;
+    font-weight: 600;
 }
 .module-list li {
+    font-size: 16px;
     margin-left: 24px;
     line-height: 30px;
+}
+.module-sub-list li{
+    font-size: 14px;
+    margin-left: 42px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.global-studies-modules {
+    width: 52%;
+    margin: 0px 10px;
+    padding: 0px 24px;
+    border-right: #30303010 2px solid;
+}
+
+.other-modules {
+    width: 48%;
+    margin: 0px 10px;
+    padding: 0px 24px;
 }
 
 /* Responsive Tablet */
@@ -1307,8 +1345,43 @@ nav a.active {
     .education-img img {
         width: 260px;
     }
+    .coursework-container {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px 0px;
+    }
+    .coursework-container h2 {
+        margin: 20px auto 10px;
+        font-size: 20px;
+    }
+    .coursework-container h3 {
+        margin: 10px auto 6px;
+        font-size: 16px;
+    }
+    .module-list li {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .module-sub-list li {
+        margin-bottom: 3px;
+    }
+    .global-studies-modules {
+        width: 50%;
+        margin: 0px 6px;
+        padding: 0px 10px;
+        border-right: #30303010 2px solid;
+    }
     
-
+    .other-modules {
+        width: 50%;
+        margin: 0px 6px;
+        padding: 0px 10px;
+    }
+    
 }
 
 
@@ -1668,6 +1741,28 @@ nav a.active {
     }
     .education-img img {
         width: 300px;
+    }
+    .coursework-header {
+        padding-bottom: 30px;
+        border-bottom: #3a304020 2px solid;
+    }
+    .coursework-container {
+        display: flex;
+        flex-direction: column;
+        column-count: 1;
+        margin: 20px auto;
+        padding: 12px;
+    }
+    .global-studies-modules {
+        width: 100%;
+        margin: 0px 10px;
+        padding: 0px;
+        border-right: none;
+    }
+    .other-modules {
+        width: 100%;
+        margin: 0px 10px;
+        padding: 0px;
     }
 }
 

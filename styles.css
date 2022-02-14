@@ -575,6 +575,11 @@ nav a.active {
     max-width: 100%;
     margin: 10px auto;
 }
+.case-study-description .item-images-small {
+    max-width: 65%;
+    margin: 20px auto;
+    display: block;
+}
 .case-study-description video {
     max-width: 800px;
     display: block;
@@ -591,7 +596,7 @@ nav a.active {
     line-height: 24px;
     border-radius: 6px;
     margin: 10px 0;
-    text-align: justify;
+    text-align: left;
 }
 .case-study-description a {
     font-family: 'Poppins', sans-serif;
@@ -607,10 +612,10 @@ nav a.active {
     font-weight: 600;
     transition: 0.5s;
 }
-.case-study-description ul {
+.case-study-description ul, ol {
     font-family: 'Poppins', sans-serif;
     color: #353535;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     margin: 20px 0 10px;
 }
@@ -619,6 +624,26 @@ nav a.active {
     color: #353535;
     font-size: 15px;
     margin-left: 18px;
+    line-height: 30px;
+}
+.case-study-description figcaption {
+    font-family: 'Poppins', sans-serif;
+    color: #272883;
+    font-size: 14px;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+.case-study-description figcaption a {
+    font-family: 'Poppins', sans-serif;
+    color: #272883;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+.case-study-description .highlight-box {
+    border: #fe3414 3px solid;
+    padding: 14px;
+    margin: 20px 10px;
 }
 .img-row {
     display: flex;
@@ -634,7 +659,7 @@ nav a.active {
     margin: 10px;
     max-width: 250px;
 }
-.shopee-figma-prototype {
+.figma-prototype {
     width: 100%;
     margin: 0px auto;
 }

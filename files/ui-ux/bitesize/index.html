@@ -43,15 +43,11 @@
                 </tr>
                 <tr>
                   <th> Project Type </th>
-                  <td> Individual </td>
+                  <td> Individual, Student Project </td>
                 </tr>
-                <!-- <tr>
-                  <th> Role </th>
-                  <td> UI/UX Designer </td>
-                </tr> -->
                 <tr>
                     <th> Tools Used </th>
-                    <td> Figma, Figjam, Google Sheets </td>
+                    <td> Figma, FigJam, Google Sheets </td>
                 </tr>
             </table>
 
@@ -61,28 +57,177 @@
                     <img src="images/cover.png" alt="bitesize case study">
                 </div>
                 
-                <p> Stay tuned for the full project! </p>
-                
-                <!-- <h3> Overview </h3>
+                <h3> Overview </h3>
                 <p>
-                    This is a student project submission for my <a href="https://nusmods.com/modules/NM3221/mobile-interaction-design" target="_blank">NM3221 Mobile Interaction Design</a> module.
-                </p>
-
-                <h3> Design Brief </h3>
-                <p>
-                    Do a case-study analysis of an existing mobile/web asset, taking into account the stakeholders involved, 
-                    surveying of user opinions on the current design being used, and proposing a <b>re-design on a specific pain point</b> 
-                    that improves on issues that the current mobile/web asset has. 
+                    BiteSize is a dietary tracking and planning app specially catered for local diets, made as a student project submission 
+                    for the <a href="https://nusmods.com/modules/NM3221/mobile-interaction-design" target="_blank">NM3221 Mobile Interaction Design</a> module.
                 </p>
 
                 <h3> Introduction </h3>
                 <p>
-                    DBS PayLah! was first introduced in 2014, admist the drive towards cashless payment in Singapore as part of the Smart Nation Initiative. 
-                    Today, digital wallets are the second-most popular payment method in Singapore, with many competitors in the market such as FavePay, GrabPay and Google Pay. 
-                    Reports have also shown that usage of digital wallets in e-commerce is expected to rise exponentially in the coming years.
+                    According to the Global Nutrition Report, Singapore has shown limited progress towards achieving its diet-related non-communicable disease (NCD) 
+                    targets. Over the years, the Singapore government has spared no effort in initiating new campaigns to encourage Singaporeans to cultivate healthy 
+                    eating habits, such as by declaring a War on Diabetes, or by hosting the Eat, Drink Shop Healthy Challenge. 
+                    While there has been an uptick in the number of Singaporeans who have since adopted healthier eating habits, much remains to be done. 
                 </p>
 
-                <h3> User Research </h3>
+                <!-- <h3> Datasources </h3>
+                <ol> 
+                    To ensure that this is a relevant problem space to tackle at all, I utilized datasets from several sources to inform my approach. 
+                    Most notably, I aggregated information from: 
+
+                    <li> 
+                        <a href="https://www.healthhub.sg/" target="_blank">HealthHub</a>, 
+                        a one-stop web portal initiated by the Ministry of Health for Singaporeans to access a wide range of health-related content; 
+                    </li>
+                    <li> 
+                        <a href="https://data.gov.sg/" target="_blank">Data.gov.sg</a> , 
+                        a publicly available government data repository – specifically, looking at datasets for healthier choice products, healthier eateries, and healthier caterers;
+                    </li>
+                    <li> 
+                        the <a href="https://www.hpb.gov.sg/" target="_blank">Health Promotion Board (HPB)</a> website, 
+                        which is under a credible government organization that aims to promote healthy living in Singapore; and
+                    </li>
+                    <li> 
+                        the <a href="https://globalnutritionreport.org/resources/nutrition-profiles/asia/south-eastern-asia/singapore/" target="_blank">Global Nutrition Report</a>, 
+                        which provides Country Nutrition Profiles tracking progress made by countries towards global nutrition targets set by the World Health Assembly.
+                    </li>
+                </ol> -->
+                
+                <h3> Problem Space </h3>
+                <p>
+                    <b>Diabetes</b><br>
+                    Over 400,000 people were revealed to have diabetes in Singapore during the 2016 Committee of Supply debates in Parliament (HealthHub, 2021). 
+                    One in three were not aware that they had the disease, while for those who were aware, one third had poor control of it. 
+                    It is projected that nearly one million people in Singapore will have diabetes by 2050 if the issue is left unaddressed. 
+                </p>
+                <p>
+                    <b>Obesity</b><br>
+                    The prevalence of obesity has been on the rise for children and adults, both males and females, in Singapore. 
+                    The 2017 National Population Health Survey found that the prevalence of obesity among adult Singaporeans (aged 18 to 59 years) was 8.9%, 
+                    and that among seniors (aged 60 to 74 years) was 6.9%. Meanwhile, 13% of children (aged 6 to 18 years) are considered obese, 
+                    signifying an increase from the 11% in 2013.  
+
+                    <img src="images/data/obese-adults.JPG" alt="obesity trend for adults in Singapore">
+                    <figcaption> Image from the <a href="https://globalnutritionreport.org/resources/nutrition-profiles/asia/south-eastern-asia/singapore/" target="_blank">Global Nutrition Report on Singapore</a> </figcaption>
+                </p>    
+                <p>
+                    This presents a pressing problem space to address, which BiteSize aims to help tackle.
+                </p>
+                    
+
+                <h3> Research Design </h3>
+                <p>
+                    <b>Preliminary Research</b><br>
+                    I first sought to understand the current app options available in the market and identify some potential areas of 
+                    improvement in existing apps. Currently, the most widely used app to track healthy eating both globally and in Singapore is MyFitnessPal. 
+                </p>
+                <ol>
+                    To find out general user sentiments on MyFitnessPal, I first looked at reviews on the Google Play Store. Some pain points identified include:
+                    <li>
+                        the user interface is <b>cluttered with random advertisements</b>, making for a very unpleasant user experience. 
+                        One of the first things users see when they open up the app is a large advertisement, rather than relevant information such as their 
+                        nutritional intake information or progression towards their health goals.
+                    </li>
+                    <img src="images/MFP/ads.png" alt="negative reviews for My Fitness Pal">
+                    <br>
+                    <li>
+                        the interface is also very <b>information dense</b>, which can be intimidating for new users who are unfamiliar with certain terminology, 
+                        leading them to feel overwhelmed by all the features and information available. 
+                        <img class="item-images-small" src="images/MFP/mfp-ui.png" alt="Cluttered UI for My Fitness Pal">
+                    </li>
+                    <li>
+                        Furthermore, MyFitnessPal is <b>not designed to specifically cater for local diets</b> nor is it targeted at local users, which can lead to inaccurate nutritional tracking. 
+                    </li>
+                </ol>
+
+                <p>
+                    Following the preliminary research conducted, I proceeded with primary research where I identified a target user group and find out more specific information on use cases.
+                    <br><br>
+                    <b>Primary Research</b><br>
+                    Target Users: Singaporeans who are conscious about their eating habits and wish to pursue a healthier lifestyle. <br><br>
+                    I employed semi-structured interviews to gather insights into my broader research goals, which was split into 2 main sections: 
+                    (i) interviewee demographics and (ii) healthy eating habits and usage of relevant applications. 
+                    <br><br>
+                    3 interviewees covering a broad range of demographics were selected. 
+                    They ranged from ages 18 to 56, with males and females who are currently undergoing different stages in life (schooling and working) in order to cover 
+                    as wide a range of scenarios as possible. The interview answers were recorded and then organized into various sticky notes for thematic analysis.
+                    
+                    <img src="images/data/NM3221 Individual Project - Frame 1.jpg" alt="Health consciousness">
+                    <p class="highlight-box">
+                    <b>Insight 1:</b> Younger interviewees (blue and pink) acknowledged that healthy eating is important, but stated that they do not really commit to 
+                    making healthy lifestyle choices. Conversely, the older interviewee (yellow) is more conscious about available food choices and healthier alternatives.  
+                    </p>
+                    
+                    <img src="images/data/NM3221 Individual Project - Frame 2.jpg" alt="Health consciousness">
+                    <p class="highlight-box">
+                    <b>Insight 2:</b> Younger interviewees (blue and pink) do not really use health-related apps, citing “laziness” or a lack of discipline to commit to regular usage. 
+                    Meanwhile, the older interviewee (yellow) uses health-related apps such as Healthy 365 regularly in relation to shopping for healthier-choice groceries, 
+                    and other similar apps that provide incentives for engaging in health-related activities. 
+                    </p>
+                    
+                    <p>
+                    Extrapolating from the interview findings, Singaporeans may place different degrees of importance on healthy eating/lifestyle depending on their age 
+                    and stage in life. While older Singaporeans may be more incentivized to make lifestyle choices that are good for their health, younger Singaporeans 
+                    may prioritize convenience instead.  
+                    </p>
+                    
+                </p>
+
+                <h3> Problem Statements </h3>
+                <p>
+                    These interview insights can be summarised in the following problem statements:
+                    <ol>
+                        <li>
+                            Health-conscious Singaporeans need an easy and convenient way to log their food so that they can track of their nutritional intake more 
+                            consistently and accurately.
+                        </li>
+                        <li>
+                            Health-conscious Singaporeans need an easy way to prepare healthy and delicious food according to their dietary needs because they want to 
+                            maintain good health over the long run.
+                        </li>
+                    </ol>
+                </p>
+
+                <h3> User Personas </h3>
+                <p>
+                    Based on the different interviewee profiles and pain points raised, I created 2 user personas to better represent the different sets of pain points that are likely 
+                    to be faced by users from 2 different age groups (younger versus older Singaporeans). 
+                </p>
+                <div class="item-images-grid">
+                    <img src="images/Persona/Andy Ho.png">
+                    <img src="images/Persona/Lilian Foo.png">
+                </div>
+
+                <h3> Introducing BiteSize </h3>
+                <p>
+                    Designed specifically for users based in Singapore, BiteSize will incorporate nutritional guidelines and food composition data by the Health Promotion Board (HPB) to 
+                    recommend suitable dietary plans in a fun and engaging manner. The app will feature a robust dataset of nutritional information for popular dishes found in Singapore, 
+                    and incorporate data on healthier eateries, caterers, and food choices based on the publicly available data at Data.gov.sg. Most importantly, Bitesize will prioritize 
+                    convenience and ease of use when it comes to food logging and preparation of healthy meals for beginners. 
+                </p>
+                <div class="item-images-grid">
+                    <img src="images/data/NM3221 Individual Project - Frame 3.jpg">
+                    <img src="images/data/NM3221 Individual Project - Frame 4.jpg">
+                </div>
+
+                <h3> Lo-fi Wireframing </h3>
+                <img src="images/lofi/Slide 16_9 - 2.png">
+                <img src="images/lofi/Slide 16_9 - 3.png">
+                <img src="images/lofi/Slide 16_9 - 4.png">
+                <img src="images/lofi/Slide 16_9 - 5.png">
+                <img src="images/lofi/Slide 16_9 - 6.png">
+                <img src="images/lofi/Slide 16_9 - 7.png">
+                <img src="images/lofi/Slide 16_9 - 8.png">
+                <!-- <img src="images/lofi/Slide 16_9 - 9.png"> -->
+                
+                <div class="figma-prototype">
+                    <h4> Interactive prototype </h4>
+                    <iframe class="responsive-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" 
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpPG3HJB9aKQ60BAFfZJuz6%2FBiteSize-(Portfolio)%3Fnode-id%3D801%253A50%26scaling%3Dscale-down%26page-id%3D4%253A51%26starting-point-node-id%3D801%253A50" allowfullscreen></iframe>
+                </div>
+
+                <!-- <h3> User Research </h3>
                 <p>
                     We conducted <b>5 semi-structured interviews</b> asking a series of questions relating to our research goals, adding necessary prompts where needed. 
                 </p>

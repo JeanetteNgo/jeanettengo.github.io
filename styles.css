@@ -1555,6 +1555,11 @@ nav a.active {
         max-width: 100%;
         padding: 6px;
     }
+    .item-images-grid {
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
     .item-images video {
         max-width: 100%;
         padding: 6px;
@@ -1591,6 +1596,9 @@ nav a.active {
     .case-study-description img {
         max-width: 100%;
         margin: 8px 5px;
+    }
+    .case-study-description .item-images-small {
+        max-width: 100%;
     }
 
     .about-img {

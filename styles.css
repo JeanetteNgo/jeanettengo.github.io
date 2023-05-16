@@ -65,6 +65,10 @@ p {
     line-height: 22px;
 }
 
+video {
+    border-radius: 12px
+}
+
 
 nav {
     position: sticky;

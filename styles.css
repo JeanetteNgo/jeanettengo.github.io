@@ -1199,8 +1199,8 @@ nav a.active {
         font-size: 14px;
         text-align: left;
     }
-    .item-description ul {
-        font-size: 15px;
+    .item-description ul, ol {
+        font-size: 14px;
     }
     .item-description li {
         font-size: 14px;

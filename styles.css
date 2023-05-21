@@ -398,7 +398,7 @@ nav a.active {
     border-radius: 6px;
     margin: 20px 0 14px 0;
 }
-.item-description ul {
+.item-description ul, ol {
     font-family: 'Poppins', sans-serif;
     color: #e5e5e5;
     font-size: 15px;
@@ -408,7 +408,7 @@ nav a.active {
 .item-description li {
     font-family: 'Poppins', sans-serif;
     color: #e5e5e5;
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 18px;
 }
 
@@ -1573,6 +1573,13 @@ nav a.active {
     .item-description p {
         font-size: 14px;
         text-align: left;
+    }
+    .item-description ul, ol {
+        font-size: 14px;
+    }
+    .item-description li {
+        font-size: 14px;
+        line-height: 160%;
     }
     .item-images img {
         max-width: 100%;

@@ -175,7 +175,7 @@ nav a.active {
     z-index: 1;
     transform: scale(1.1);
     box-shadow: 0 25px 40px rgb(0, 0, 0, 0.4);
-    border-radius: 25px;
+    border-radius: 20px;
     cursor: pointer;
 }
 .projects-container .box .img-box {
@@ -196,6 +196,7 @@ nav a.active {
     height: 300px;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 8px;
     transition: transform 400ms;
 }
 .projects-container .box:hover .img-box img {

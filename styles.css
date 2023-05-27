@@ -257,7 +257,7 @@ nav a.active {
 .footer {
     /* position: fixed; */
     margin-top: 40px;
-    position:absolute
+    position:absolute;
     bottom: 0;
     height: 100px;
     background-color: #3a3040;

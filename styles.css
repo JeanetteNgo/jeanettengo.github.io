@@ -69,6 +69,9 @@ video {
     border-radius: 12px
 }
 
+main {
+    min-height: 100vh;
+}
 
 nav {
     position: sticky;
@@ -147,15 +150,15 @@ nav a.active {
 }
 
 
+
 /* PROJECTS */
 
 .projects-container {
     position: relative;
     width: 1280px;
     max-width: 100%;
-    min-height: 90vh;
-    margin: 70px auto 0;
-    padding-top: 40px;
+    /* min-height: 90vh; */
+    margin: 80px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,8 +260,8 @@ nav a.active {
 .footer {
     /* position: fixed; */
     margin-top: 40px;
-    position:absolute;
-    bottom: 0;
+    /* position:absolute; */
+    /* bottom: 0; */
     height: 100px;
     background-color: #3a3040;
     background-image: url(./images/background.jpg);

@@ -70,7 +70,7 @@ video {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 nav {
@@ -260,8 +260,8 @@ nav a.active {
 .footer {
     /* position: fixed; */
     margin-top: 40px;
-    /* position:absolute; */
-    /* bottom: 0; */
+    position: relative;
+    bottom: 0;
     height: 100px;
     background-color: #3a3040;
     background-image: url(./images/background.jpg);

@@ -153,8 +153,9 @@ nav a.active {
     position: relative;
     width: 1280px;
     max-width: 100%;
-    min-height: 500px;
+    min-height: 90vh;
     margin: 70px auto 0;
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -256,6 +257,7 @@ nav a.active {
 .footer {
     /* position: fixed; */
     margin-top: 40px;
+    position:absolute
     bottom: 0;
     height: 100px;
     background-color: #3a3040;
